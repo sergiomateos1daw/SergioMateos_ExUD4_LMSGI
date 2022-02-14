@@ -1,0 +1,45 @@
+<?xml-model href="ejercicio1XSD.xsd"?>
+<Los_remedios>
+    <pedidos>
+        <pedido>
+            <cod_sucursal>A1234567</cod_sucursal>
+            <nombre_trabajador>Sergio Mateos</nombre_trabajador>
+            <fecha_pedido>2022/02/14</fecha_pedido>
+            <observaciones>urgente</observaciones>
+            <articulos>
+                <articulo cod="ABC-123">
+                    <numero_unidades>2</numero_unidades>
+                    <precio_unidad>6€</precio_unidad>
+                    <observaciones>Tamaño medio</observaciones>
+                    <plazo_revision>3 días</plazo_revision>
+                </articulo>
+                <articulo cod="DEF-456">
+                    <numero_unidades>5</numero_unidades>
+                    <precio_unidad>2€</precio_unidad>
+                    <observaciones>Tamaño pequeño</observaciones>
+                    <plazo_revision>2 días</plazo_revision>
+                </articulo>
+            </articulos>
+        </pedido>
+        <pedido>
+            <cod_sucursal>B7654321</cod_sucursal>
+            <nombre_trabajador>Airam Linares</nombre_trabajador>
+            <fecha_pedido>2022/02/14</fecha_pedido>
+            <observaciones>incompleto</observaciones>
+            <articulos>
+                <articulo cod="GHI-789">
+                    <numero_unidades>7</numero_unidades>
+                    <precio_unidad>10€</precio_unidad>
+                    <observaciones>Tamaño grande</observaciones>
+                    <plazo_revision>5 días</plazo_revision>
+                </articulo>
+                <articulo cod="TJI-987">
+                    <numero_unidades>8</numero_unidades>
+                    <precio_unidad>1€</precio_unidad>
+                    <observaciones>Tamaño pequeño</observaciones>
+                    <plazo_revision>4 días</plazo_revision>
+                </articulo>
+            </articulos>
+        </pedido>
+    </pedidos>
+</Los_remedios>

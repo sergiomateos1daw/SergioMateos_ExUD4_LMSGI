@@ -1,0 +1,13 @@
+<!ELEMENT Los_remedios (pedidos)>
+<!ELEMENT pedidos (pedido+)>
+<!ELEMENT pedido (cod_sucursal,nombre_trabajador,fecha_pedido,observaciones,articulos)>
+<!ELEMENT cod_sucursal (#PCDATA)>
+<!ELEMENT nombre_trabajador (#PCDATA)>
+<!ELEMENT fecha_pedido (#PCDATA)>
+<!ELEMENT observaciones (#PCDATA)>
+<!ELEMENT articulos (articulo+)>
+<!ELEMENT articulo (numero_unidades,precio_unidad,observaciones,plazo_revision)>
+<!ATTLIST articulo cod NMTOKEN #REQUIRED>
+<!ELEMENT numero_unidades (#PCDATA)>
+<!ELEMENT precio_unidad (#PCDATA)>
+<!ELEMENT plazo_revision (#PCDATA)>

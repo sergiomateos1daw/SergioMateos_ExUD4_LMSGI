@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Los_remedios">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="pedidos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="pedido" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="cod_sucursal" type="xs:string" />
+                                        <xs:element name="nombre_trabajador" type="xs:string" />
+                                        <xs:element name="fecha_pedido" type="xs:string" />
+                                        <xs:element name="observaciones" type="xs:string" />
+                                        <xs:element name="articulos">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="articulo" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="numero_unidades" type="xs:int" />
+                                                                <xs:element name="precio_unidad" type="xs:string" />
+                                                                <xs:element name="observaciones" type="xs:string" />
+                                                                <xs:element name="plazo_revision" type="xs:string" />
+                                                            </xs:sequence>
+                                                            <xs:attribute name="cod" use="required" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
