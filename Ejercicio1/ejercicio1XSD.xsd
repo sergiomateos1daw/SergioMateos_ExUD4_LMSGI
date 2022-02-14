@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:annotation>
+        <xs:documentation xml:lang="ES-es">
+        Esquema para los pedidos de Los Remedios SA
+        <fecha> 14/2/2022 </fecha>
+        <autor> Sergio Mateos </autor>
+        </xs:documentation>
+    </xs:annotation>
     <xs:element name="Los_remedios">
         <xs:complexType>
             <xs:sequence>
@@ -19,7 +26,7 @@
                                                     <xs:element name="articulo" maxOccurs="unbounded">
                                                         <xs:complexType>
                                                             <xs:sequence>
-                                                                <xs:element name="numero_unidades" type="xs:int" />
+                                                                <xs:element name="numero_unidades" type="xs:string" />
                                                                 <xs:element name="precio_unidad" type="xs:string" />
                                                                 <xs:element name="observaciones" type="xs:string" />
                                                                 <xs:element name="plazo_revision" type="xs:string" />

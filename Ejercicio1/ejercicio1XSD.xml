@@ -1,5 +1,6 @@
-<?xml-model href="ejercicio1XSD.xsd"?>
-<Los_remedios>
+<?xml version="1.0" encoding="UTF-8"?>
+<Los_remedios xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ejercicio1XSD.xsd">
     <pedidos>
         <pedido>
             <cod_sucursal>A1234567</cod_sucursal>
